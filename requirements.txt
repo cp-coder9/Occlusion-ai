@@ -1,0 +1,18 @@
+opencv-python-headless>=4.7.0
+torch>=2.0.0
+torchvision
+numpy
+pillow
+pyyaml
+ultralytics
+timm
+midas==0.2.4
+# Optional/advanced (comment/uncomment when ready to install)
+# diffusers
+# accelerate
+# safetensors
+# e2fgvi (see its repo for installation instructions)
+# bytetrack / deep-sort implementations
+filterpy
+scikit-image
+matplotlib

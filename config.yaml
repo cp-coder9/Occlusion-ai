@@ -1,0 +1,19 @@
+camera:
+  type: rtsp
+  url: "0"  # use 0 for webcam, or RTSP URL like rtsp://user:pass@ip:554/stream
+processing:
+  device: cpu
+  fps_cap: 15
+segmentation:
+  model: yolov8m-seg.pt
+  conf_thresh: 0.35
+inpainting:
+  method: opencv  # options: opencv | la_ma | e2fgvi | stable_diffusion
+  la_ma_path: ""  # local path to LaMa weights if using LaMa
+depth:
+  model: midas
+tracking:
+  method: centroid  # options: centroid | bytetrack
+output:
+  show_window: true
+  save_out: false
